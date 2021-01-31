@@ -1,6 +1,6 @@
 # Squid
 
-## TCP Proxy Server
+## HTTP Proxy Server
 
 ```
 main() {
@@ -9,11 +9,11 @@ main() {
   echo -n "weit for running 3.."
   for i in {2..0}
   do
-    sleep 1.1
+    sleep 1.2
     echo -n "$i.."
   done
   echo
-  https_proxy=127.0.0.1:3128 curl -i https://ifconfig.io
+  https_proxy=http://127.0.0.1:3128 curl -i https://ifconfig.io
   docker stop squid
 }
 main
