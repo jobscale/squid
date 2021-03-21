@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eu
+
+"cache_peer proxy.aws.jsx.jp       parent    3128  0  default" | tee -a /usr/share/squid/squid.conf
