@@ -7,7 +7,7 @@ RUN sed \
   -e 's/^http_access deny all/http_access allow all/g' \
   -e 's/port 443/port 22-33000/g' \
   /etc/squid/squid.conf > /usr/share/squid/squid.conf
-COPY options options
+COPY . .
 RUN rm -fr /var/lib/apt/lists/*
 EXPOSE 3128
-CMD ["/usr/sbin/squid", "-N", "-f", "/usr/share/squid/squid.conf"]
+CMD ["bash", "-c", "/usr/sbin/squid -N -f /usr/share/squid/squid.conf"]
