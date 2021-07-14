@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -eu
+
+squid -k parse -f /usr/share/squid/squid.conf
+squid -k check -f /usr/share/squid/squid.conf
+squid -k reconfigure -f /usr/share/squid/squid.conf
