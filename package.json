@@ -1,0 +1,22 @@
+{
+  "name": "squid",
+  "version": "1.0.0",
+  "description": "HTTP Proxy Server",
+  "author": "jobscale <jobscale@users.noreply.github.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "squid -N",
+    "reload": "squid -k parse && squid -k reconfigure",
+    "test": "squid -k parse"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobscale/squid.git"
+  },
+  "keywords": ["proxy", "squid"],
+  "bugs": {
+    "url": "https://github.com/jobscale/squid/issues"
+  },
+  "homepage": "https://github.com/jobscale/squid#readme",
+  "license": "MIT"
+}

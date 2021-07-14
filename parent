@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -eu
+
+parent() {
+  echo "cache_peer  proxy.parent.jsx.jp  parent  3128  0  default"
+  echo "never_direct allow all"
+}
+
+parent | tee -a /etc/squid/conf.d/parent.conf
