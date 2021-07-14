@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 set -eu
 
-echo "cache_peer  proxy.aws.jsx.jp  parent  3128  0  default" | tee -a /usr/share/squid/squid.conf
+options() {
+  echo "cache_peer  proxy.aws.jsx.jp  parent  3128  0  default"
+  echo "never_direct allow all"
+  echo "always_direct deny all"
+}
+
+options | tee -a /usr/share/squid/squid.conf
