@@ -2,8 +2,10 @@
 set -eu
 
 parent() {
-  echo "cache_peer  proxy.parent.jsx.jp  parent  3128  0  default"
-  echo "never_direct allow all"
+  echo "cache_peer  proxy.secure.jsx.jp  parent  3128  0  default"
+  echo "acl Parent_domain dstdom_regex inet-ipi\.info"
+  echo "never_direct allow Parent_domain"
+  echo "never_direct deny all"
 }
 
 parent | tee -a /etc/squid/conf.d/parent.conf
