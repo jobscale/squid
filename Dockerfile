@@ -1,4 +1,4 @@
-FROM node:buster-slim
+FROM node:bullseye-slim
 SHELL ["bash", "-c"]
 WORKDIR /usr/share/squid
 ENV DEBIAN_FRONTEND noninteractive
