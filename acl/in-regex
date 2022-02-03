@@ -1,4 +1,7 @@
 \.onelogin\.com
+login\.microsoftonline\.com
 \.secure-place\.
 api\..*\..*nic\.com
 \..*-api\..*\..*nic\.com
+\.elb\..*\..*.com
+inet-ip\.info
