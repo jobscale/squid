@@ -4,8 +4,8 @@
 
 ```
 main() {
-  docker build . -t local/squid
-  docker run --rm --name squid  -p 3128:3128 -d local/squid
+  docker build . -f Dockerfile -t local/squid
+  docker run --rm --name squid  -p 8080:3128 -it local/squid
   echo -n "weit for running 3.."
   for i in {2..0}
   do
