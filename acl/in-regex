@@ -1,8 +1,8 @@
+^inet-ip\.info$
+\.internal$
 \.onelogin\.com
 login\.microsoftonline\.com
 \.secure-place\.
 api\..*\..*nic\.com
-\..*-api\..*\..*nic\.com
-\.elb\..*\..*.com
-inet-ip\.info
-.*\.execute-api\..*\.amazonaws\.com
+\.elb\..*\.amazonaws\.com
+\.execute-api\..*\.amazonaws\.com
