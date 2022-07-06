@@ -6,3 +6,4 @@ login\.microsoftonline\.com
 api\..*\..*nic\.com
 \.elb\..*\.amazonaws\.com
 \.execute-api\..*\.amazonaws\.com
+\.cloudfront\.net
