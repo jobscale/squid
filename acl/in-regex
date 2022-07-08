@@ -1,4 +1,4 @@
-^inet-ip\.info$
+^ifconfig\.io$
 \.internal$
 \.onelogin\.com
 login\.microsoftonline\.com
@@ -6,4 +6,3 @@ login\.microsoftonline\.com
 api\..*\..*nic\.com
 \.elb\..*\.amazonaws\.com
 \.execute-api\..*\.amazonaws\.com
-\.cloudfront\.net
