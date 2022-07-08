@@ -1,8 +1,5 @@
 ^ifconfig\.io$
 \.internal$
 \.onelogin\.com
-login\.microsoftonline\.com
 \.secure-place\.
 api\..*\..*nic\.com
-\.elb\..*\.amazonaws\.com
-\.execute-api\..*\.amazonaws\.com
