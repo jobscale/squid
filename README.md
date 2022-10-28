@@ -4,12 +4,12 @@
 
 ```
 {
-  docker build . -f Dockerfile -t local/squid
-  docker run --rm --name squid  -p 8080:3128 -it local/squid
+  docker build . -f Dockerfile -t squid:local \
+  && docker run --rm --name squid  -p 127.0.0.2:3128:3128 -it squid:local
 }
 
-{
-  https_proxy=http://127.0.0.1:8080 curl -i https://ifconfig.io
+ifconfig() {
+  https_proxy=http://127.0.0.2:3128 curl -i https://ifconfig.io/ip
   docker stop squid
 }
 ```
