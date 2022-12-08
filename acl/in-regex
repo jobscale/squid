@@ -1,7 +1,11 @@
+os\.jsx\.jp
 ^ifconfig\.io$
 \.internal$
 \.onelogin\.com
-\.secure-place\.
-api\..*\..*nic\.com
-\.jp\.nic\.com
+\.microsoft\.com
+\.microsoftonline\.com
+\.cloudfront\.net
+\.office\.com
+\.panasonic\.com
+\.panasonic\.co\.jp
 .*-portal\.new.*\.next.*\.jp
