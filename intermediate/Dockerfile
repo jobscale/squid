@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 SHELL ["bash", "-c"]
 WORKDIR /usr/share/squid
 ENV DEBIAN_FRONTEND noninteractive

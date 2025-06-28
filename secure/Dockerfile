@@ -1,8 +1,8 @@
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 SHELL ["bash", "-c"]
 WORKDIR /usr/share/squid
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt update && apt-get install -y squid
+RUN apt-get update && apt-get install -y squid
 RUN rm -fr /var/lib/apt/lists/*
 COPY acl acl
 COPY secure/custom-secure.conf /etc/squid/conf.d/
