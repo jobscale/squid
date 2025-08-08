@@ -2,9 +2,9 @@ FROM debian:bookworm-slim
 SHELL ["bash", "-c"]
 WORKDIR /usr/share/squid
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y apt-transport-https
-RUN apt-get update && apt-get install -y squid curl unzip openssl make g++ libssl-dev libxml2-dev libgnutls28-dev
-RUN rm -fr /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y apt-transport-https \
+  squid curl unzip openssl make g++ libssl-dev libxml2-dev libgnutls28-dev \
+ && rm -fr /var/lib/apt/lists/*
 RUN curl -sL -O http://www.squid-cache.org/Versions/v4/squid-4.17.tar.gz
 RUN cd /usr/lib && tar xf /usr/share/squid/squid-4.17.tar.gz \
  && mv /usr/lib/squid /usr/lib/squid-4.13 \
