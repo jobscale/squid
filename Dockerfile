@@ -1,4 +1,4 @@
-FROM debian:tixie-slim
+FROM debian:trixie-slim
 SHELL ["bash", "-c"]
 WORKDIR /usr/share/squid
 ENV DEBIAN_FRONTEND=noninteractive
